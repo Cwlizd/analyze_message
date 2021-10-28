@@ -20,3 +20,11 @@ for d in data:
 		message.append(d)
 print('小於100總比數為:',len(message))
 
+okok = [d for d in data if 'good' in d]
+print(len(okok))
+
+nope = [d for d in data if 'bad' in d]
+print(len(nope))
+
+none = ['bad' in d for d in data]
+print(none)
